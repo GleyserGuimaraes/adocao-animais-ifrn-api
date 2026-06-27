@@ -1,12 +1,8 @@
 # API ADOCAO DE ANIMAIS
 
-API REST desenvolvida com FastAPI para gerenciamento de animais disponíveis para adoção e registro de adoções.
+API REST desenvolvida com FastAPI para gerenciamento de animais disponíveis para adoção e registro de adoções. Este projeto foi desenvolvido com fins acadêmicos para demonstrar conceitos de Engenharia de Software, desenvolvimento de APIs REST, modelagem de dados e boas práticas de organização de projetos utilizando FastAPI.
 
-Este projeto foi desenvolvido com fins acadêmicos para demonstrar conceitos de Engenharia de Software, desenvolvimento de APIs REST, modelagem de dados e boas práticas de organização de projetos utilizando FastAPI.
-
-O principal objetivo é simular a entrada de um novo desenvolvedor em uma equipe de software que já possui um sistema em desenvolvimento. Intencionalmente o projeto possui erros de lógica, códigos confusos e dificeis de ler. O objetivo é simular um ambiente real. 
-
-Dessa forma, o participante deve passar pelas etapas de ambientação no projeto, compreensão da arquitetura existente, análise dos requisitos e implementação/correção de funcionalidades de menor complexidade, reproduzindo atividades comuns do dia a dia de equipes de desenvolvimento.
+O principal objetivo é simular a entrada de um novo desenvolvedor em uma equipe de software que já possui um sistema em desenvolvimento. Este projeto representa uma aplicação em desenvolvimento mantida por uma equipe de software. Assim como ocorre em projetos reais, o código apresenta funcionalidades parcialmente implementadas, pequenas inconsistências, trechos que podem ser refatorados e oportunidades de melhoria. Durante a atividade, o participante deverá compreender a arquitetura existente, identificar problemas e evoluir a aplicação conforme os requisitos propostos.
 
 Durante a execução do projeto, são trabalhados conceitos como:
 
@@ -93,7 +89,7 @@ http://localhost:8000/redoc
 
 ---
 
-## Endpoints
+## Endpoints 
 
 ### Animais
 
@@ -144,7 +140,7 @@ http://localhost:8000/redoc
 
 ---
 
-## 📦 Exemplo de Registro de Adoção
+## Exemplo de Registro de Adoção
 
 ### Requisição
 
@@ -173,6 +169,3 @@ http://localhost:8000/redoc
 **Gleyser Guimarães**
 
 Professor de Informática | Desenvolvedor de Software
-
----
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
