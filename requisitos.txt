@@ -1,0 +1,83 @@
+>>>> Requisitos Funcionais
+RF01 – Cadastrar animal
+O sistema deve permitir o cadastro de animais disponíveis para adoção.
+
+RF02 – Consultar animais disponíveis
+O sistema deve permitir a consulta da lista de animais disponíveis para adoção.
+
+RF03 – Consultar animal específico
+O sistema deve permitir a consulta dos dados de um animal por seu identificador.
+
+RF04 – Registrar adoção
+O sistema deve permitir registrar a adoção de um animal por um adotante.
+
+RF05 – Consultar adoções
+O sistema deve permitir listar as adoções realizadas.
+
+RF06 – Atualizar status do animal
+Após uma adoção, o sistema deve atualizar o status do animal para "Adotado".
+
+>>>> Requisitos Não Funcionais
+RNF01 – API REST
+O sistema deve disponibilizar seus serviços por meio de uma API REST.
+
+RNF02 – Formato JSON
+As informações trocadas entre cliente e servidor devem utilizar o formato JSON.
+
+RNF03 – Documentação automática
+A API deve disponibilizar documentação automática utilizando Swagger/OpenAPI.
+
+RNF04 – Desempenho
+As consultas devem retornar resultados em tempo adequado para aplicações de pequeno porte.
+
+RNF05 – Código organizado
+O sistema deve seguir uma arquitetura organizada utilizando FastAPI e separação por módulos.
+
+>>>> Regras de Negócio
+RN01: Um animal só pode ser adotado uma única vez.
+
+RN02: Apenas animais com status "Disponível" podem ser adotados.
+
+RN03: Após a adoção, o animal deve ter seu status alterado para "Adotado".
+
+RN04: Não é permitido registrar adoção para um animal inexistente.
+
+RN05: Todo animal deve possuir nome, espécie e idade cadastrados.
+
+>>>> Casos de Uso
+--- UC01 – Cadastrar Animal
+
+Ator: Administrador
+
+Fluxo Principal:
+
+1-O usuário informa os dados do animal.
+2-O sistema valida os dados.
+3-O sistema salva o animal.
+4-O sistema confirma o cadastro.
+
+--- UC02 – Listar Animais Disponíveis
+
+Ator: Interessado na adoção
+
+Fluxo Principal:
+
+1-O usuário solicita a lista de animais.
+2-O sistema retorna os animais disponíveis.
+
+--- UC03 – Realizar Adoção
+
+Ator: Interessado na adoção
+
+Fluxo Principal:
+
+1-O usuário informa o animal desejado.
+2-O sistema verifica se o animal está disponível.
+3-O sistema registra a adoção.
+4-O sistema altera o status do animal para "Adotado".
+5-O sistema confirma a adoção.
+
+Fluxo Alternativo:
+
+2a. O animal já foi adotado.
+2b. O sistema informa que a adoção não pode ser realizada.
