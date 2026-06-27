@@ -59,8 +59,14 @@ Durante a execução do projeto, são trabalhados conceitos como:
 
 ## Executando a Aplicação
 
+Abra um temrinal e instale o FAST API
 ```bash
-uvicorn app.main:app --reload
+pip install "fastapi[standard]"
+```
+
+Após instalar, entre na pasta app e execute o projeto:
+```bash
+python -m uvicorn main:app --reload
 ```
 
 A aplicação estará disponível em:
